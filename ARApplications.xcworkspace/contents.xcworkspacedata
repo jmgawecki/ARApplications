@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ARFunnyFace/../WalkingRobot/WalkingRobot/WalkingRobot.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ARFunnyFace/ARFunnyFace.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:TinyTankToy/TinyTankToy.xcodeproj">
    </FileRef>
 </Workspace>

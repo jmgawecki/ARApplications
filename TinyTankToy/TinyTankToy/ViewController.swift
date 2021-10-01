@@ -109,35 +109,35 @@ class ViewController: UIViewController {
     @IBOutlet weak var arView: ARView!
     
     var tankAnchor: TinyToyTank._TinyToyTank?
+//    var terracotaCube: HelloRealityKit.TerracotaScene?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         layoutConstraints()
 
+        arView.debugOptions.insert(.showSceneUnderstanding)
         tankAnchor = try? TinyToyTank.load_TinyToyTank()
 
+
         guard let tankAnchor = tankAnchor else {
-            return
+            fatalError("TankAnchor cube could not finish")
         }
         
-//
-//        tankAnchor.actions.actionComplete.onAction = { [weak self] _ in
-//            guard let self = self else { return }
-//            self.animationCounter -= 1
-//        }
-//
-//
+        
+        tankAnchor.cannon?.setParent(tankAnchor, preservingWorldTransform: true)
         
         // Add the box anchor to the scene
         arView.scene.anchors.append(tankAnchor)
     }
     
+//    fileprivate func createNode() -> SCN
+    
     fileprivate func layoutConstraints() {
         NSLayoutConstraint.activate([
             buttonPanel.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
             buttonPanel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
-            buttonPanel.widthAnchor.constraint(equalToConstant: 300),
-            buttonPanel.heightAnchor.constraint(equalToConstant: 200),
+            buttonPanel.widthAnchor.constraint(equalToConstant: 270),
+            buttonPanel.heightAnchor.constraint(equalToConstant: 180),
         ])
     }
 }

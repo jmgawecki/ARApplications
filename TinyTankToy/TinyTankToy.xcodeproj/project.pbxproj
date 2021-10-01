@@ -17,6 +17,8 @@
 		EF1560762700F58C00A99D1C /* TinyTankToyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1560752700F58C00A99D1C /* TinyTankToyUITestsLaunchTests.swift */; };
 		EF1560842700FA2200A99D1C /* TinyToyTank.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = EF1560832700FA2200A99D1C /* TinyToyTank.rcproject */; };
 		EF5D94A7270102F800BC96B8 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5D94A6270102F800BC96B8 /* Buttons.swift */; };
+		EF996F37270492880035FCD7 /* HelloRealityKit.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = EF996F36270492880035FCD7 /* HelloRealityKit.rcproject */; };
+		EF996F3B2704AFBC0035FCD7 /* Plane.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = EF996F3A2704AFBC0035FCD7 /* Plane.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +50,12 @@
 		EF15606F2700F58C00A99D1C /* TinyTankToyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyTankToyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1560732700F58C00A99D1C /* TinyTankToyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyTankToyUITests.swift; sourceTree = "<group>"; };
 		EF1560752700F58C00A99D1C /* TinyTankToyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyTankToyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EF1560822700F73800A99D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EF1560822700F73800A99D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF1560832700FA2200A99D1C /* TinyToyTank.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = TinyToyTank.rcproject; sourceTree = "<group>"; };
 		EF5D94A6270102F800BC96B8 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		EF996F36270492880035FCD7 /* HelloRealityKit.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = HelloRealityKit.rcproject; sourceTree = "<group>"; };
+		EF996F3A2704AFBC0035FCD7 /* Plane.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Plane.rcproject; sourceTree = "<group>"; };
+		EF996F3C2704B62E0035FCD7 /* ARBusinessCard.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = ARBusinessCard.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				EF1560822700F73800A99D1C /* Info.plist */,
-				EF1560532700F58B00A99D1C /* AppDelegate.swift */,
+				EF996F392704AF870035FCD7 /* RCProjects */,
+				EF996F382704AF700035FCD7 /* Support Files */,
 				EF1560552700F58B00A99D1C /* ViewController.swift */,
-				EF1560832700FA2200A99D1C /* TinyToyTank.rcproject */,
-				EF1560592700F58B00A99D1C /* Main.storyboard */,
-				EF15605C2700F58C00A99D1C /* Assets.xcassets */,
-				EF15605E2700F58C00A99D1C /* LaunchScreen.storyboard */,
 				EF5D94A6270102F800BC96B8 /* Buttons.swift */,
 			);
 			path = TinyTankToy;
@@ -128,6 +130,28 @@
 				EF1560752700F58C00A99D1C /* TinyTankToyUITestsLaunchTests.swift */,
 			);
 			path = TinyTankToyUITests;
+			sourceTree = "<group>";
+		};
+		EF996F382704AF700035FCD7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF15605E2700F58C00A99D1C /* LaunchScreen.storyboard */,
+				EF15605C2700F58C00A99D1C /* Assets.xcassets */,
+				EF1560592700F58B00A99D1C /* Main.storyboard */,
+				EF1560532700F58B00A99D1C /* AppDelegate.swift */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		EF996F392704AF870035FCD7 /* RCProjects */ = {
+			isa = PBXGroup;
+			children = (
+				EF1560832700FA2200A99D1C /* TinyToyTank.rcproject */,
+				EF996F36270492880035FCD7 /* HelloRealityKit.rcproject */,
+				EF996F3A2704AFBC0035FCD7 /* Plane.rcproject */,
+				EF996F3C2704B62E0035FCD7 /* ARBusinessCard.rcproject */,
+			);
+			path = RCProjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +288,9 @@
 				EF1560562700F58B00A99D1C /* ViewController.swift in Sources */,
 				EF1560842700FA2200A99D1C /* TinyToyTank.rcproject in Sources */,
 				EF1560542700F58B00A99D1C /* AppDelegate.swift in Sources */,
+				EF996F37270492880035FCD7 /* HelloRealityKit.rcproject in Sources */,
 				EF5D94A7270102F800BC96B8 /* Buttons.swift in Sources */,
+				EF996F3B2704AFBC0035FCD7 /* Plane.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
