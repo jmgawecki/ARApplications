@@ -2,7 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ARFunnyFace/../WalkingRobot/WalkingRobot/WalkingRobot.xcodeproj">
+      location = "group:HandMotionDetector/HandMotionDetector/HandMotionDetector.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:HandPoseDetector/HandPoseDetector/HandPoseDetector.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:SceneDepth/SceneDepth/SceneDepth.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:ARFunnyFace/ARFunnyFace.xcodeproj">
